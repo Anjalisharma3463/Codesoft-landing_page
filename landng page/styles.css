@@ -1,0 +1,178 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   background-image: url( /images/Screenshot\ 2024-07-12\ 161026.jpg);
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background-color: #7d8d7d;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.text{
+    color: aliceblue;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section styles */
+section {
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+section::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* Home section styles */
+#home {
+    background: url('images/home-bg.jpg') no-repeat center center / cover;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+.home-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* About section styles */
+#about {
+    background: url('images/about-bg.jpg') no-repeat center center / cover;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+    color: #333;
+}
+
+.team-member img {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    margin: 0;
+}
+
+/* Services section styles */
+#services {
+    background: url('images/services-bg.jpg') no-repeat center center / cover;
+}
+
+#services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#services ul li {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-left: 5px solid #4CAF50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+#services ul li img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Contact section styles */
+#contact {
+   
+    padding-bottom: 100px; /* Adjust padding if needed */
+}
+
+#contact img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    #services ul li {
+        font-size: 0.9em;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+
+    .team-member {
+        margin-bottom: 20px;
+    }
+}
