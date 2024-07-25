@@ -3,14 +3,13 @@ body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   background-image: url( /images/Screenshot\ 2024-07-12\ 161026.jpg);
-}
+ }
 
 /* General body styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #0d062c;
 }
 
 /* Header styles */
